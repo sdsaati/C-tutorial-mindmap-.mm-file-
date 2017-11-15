@@ -1,7 +1,7 @@
 <map version="freeplane 1.5.9">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="C++" LOCALIZED_STYLE_REF="styles.topic" FOLDED="false" ID="68fkp72s1ral52daf53m4mbdcv" CREATED="1475451792741" MODIFIED="1506961692544" VGAP_QUANTITY="0.6 px"><hook NAME="MapStyle" background="#f7f7f7" zoom="1.364">
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="true"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" FORMAT_AS_HYPERLINK="false" STYLE="oval" UNIFORM_SHAPE="true" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" VGAP_QUANTITY="24.0 pt">
@@ -753,6 +753,137 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 <node TEXT="&#x62a;&#x648;&#x627;&#x628;&#x639; friend &#x646;&#x645;&#x6cc; &#x62a;&#x648;&#x627;&#x646;&#x646;&#x62f; &#x627;&#x632; this &#x627;&#x633;&#x62a;&#x641;&#x627;&#x62f;&#x647; &#x6a9;&#x646;&#x646;&#x62f;" ID="ID_688927928" CREATED="1507000180958" MODIFIED="1507000208016"/>
+</node>
+<node TEXT="&#x627;&#x634;&#x627;&#x631;&#x647; &#x6af;&#x631; &#x628;&#x647; &#x6a9;&#x644;&#x627;&#x633;" ID="ID_594299290" CREATED="1510780810296" MODIFIED="1510780816184">
+<node TEXT="&#x634;&#x628;&#x6cc;&#x647; &#x627;&#x634;&#x627;&#x631;&#x647; &#x6af;&#x631; &#x628;&#x647; &#x627;&#x633;&#x62a;&#x631;&#x627;&#x6a9;&#x686;&#x631; &#x627;&#x633;&#x62a;" FOLDED="true" ID="ID_610401967" CREATED="1510780836454" MODIFIED="1510780854791">
+<node ID="ID_471438629" CREATED="1510780928806" MODIFIED="1510781067623"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class Box {
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;// Constructor definition
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;Box(double l = 2.0, double b = 2.0, double h = 2.0) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt;&quot;Constructor called.&quot; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;length = l;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;breadth = b;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;height = h;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double Volume() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return length * breadth * height;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;private:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double length;&#160;&#160;&#160;&#160;&#160;// Length of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double breadth;&#160;&#160;&#160;&#160;// Breadth of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double height;&#160;&#160;&#160;&#160;&#160;// Height of a box
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box1(3.3, 1.2, 1.5);&#160;&#160;&#160;&#160;// Declare box1
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box2(8.5, 6.0, 2.0);&#160;&#160;&#160;&#160;// Declare box2
+    </p>
+    <p>
+      &#160;&#160;&#160;<b>Box *<font color="#ff0000">ptrBox</font>;</b>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#008000">// Declare pointer to a class.</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Save the address of first object
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#ff0000">ptrBox = &amp;Box1;</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Now try to access a member using member access operator
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Volume of Box1: &quot; &lt;&lt; <font color="#000000"><b>ptrBox-&gt;Volume()</b></font>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Save the address of first object
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#ff0000">ptrBox = &amp;Box2;</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Now try to access a member using member access operator
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Volume of Box2: &quot; &lt;&lt; <font color="#000000"><b>ptrBox-&gt;Volume()</b></font>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="Inheritance" POSITION="left" ID="ID_157631212" CREATED="1506962182299" MODIFIED="1506962188611"/>
