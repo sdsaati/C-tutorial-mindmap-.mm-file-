@@ -396,7 +396,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 <node TEXT="Dynamic Memory" POSITION="left" ID="ID_210870616" CREATED="1506962242722" MODIFIED="1506962245907"/>
-<node TEXT="Class &amp; Objects" POSITION="left" ID="ID_1266577794" CREATED="1506962172827" MODIFIED="1506962181716">
+<node TEXT="Class &amp; Objects" FOLDED="true" POSITION="left" ID="ID_1266577794" CREATED="1506962172827" MODIFIED="1506962181716">
 <node TEXT="class Box {&#xa;   public:&#xa;      double length;   // Length of a box&#xa;      double breadth;  // Breadth of a box&#xa;      double height;   // Height of a box&#xa;};" FOLDED="true" ID="ID_1089271205" CREATED="1506968000078" MODIFIED="1506998406141">
 <font NAME="Courier New" BOLD="false"/>
 <node TEXT="Box Box1;          // Declare Box1 of type Box&#xa;Box Box2;          // Declare Box2 of type Box" ID="ID_1157035833" CREATED="1506968016974" MODIFIED="1506968018199">
@@ -876,6 +876,306 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
     <p>
       }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+<node TEXT="&#x645;&#x62a;&#x63a;&#x6cc;&#x631;&#x647;&#x627;&#x6cc; &#x627;&#x633;&#x62a;&#x627;&#x62a;&#x6cc;&#x6a9; &#x62f;&#x631; &#x6a9;&#x644;&#x627;&#x633;" ID="ID_437096510" CREATED="1510784188649" MODIFIED="1510785654105">
+<node TEXT="no matter how many objects of the class are created, there is only one copy of the static member." ID="ID_777265066" CREATED="1510784204843" MODIFIED="1510784205971"/>
+<node TEXT="A static member is shared by all objects of the class" ID="ID_178915130" CREATED="1510784220650" MODIFIED="1510784221979"/>
+<node TEXT="&#x645;&#x642;&#x62f;&#x627;&#x631; &#x627;&#x648;&#x644;&#x6cc;&#x647; &#x6cc; &#x627;&#x639;&#x636;&#x627;&#x6cc; &#x627;&#x633;&#x62a;&#x627;&#x62a;&#x6cc;&#x6a9; &#x635;&#x641;&#x631; &#x627;&#x633;&#x62a;" FOLDED="true" ID="ID_1743214282" CREATED="1510785220424" MODIFIED="1510785229586">
+<node ID="ID_1419947172" CREATED="1510785274809" MODIFIED="1510785357491"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class Box {
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<b><font color="#ff0000">static int objectCount;</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;// Constructor definition
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;Box(double l = 2.0, double b = 2.0, double h = 2.0) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt;&quot;Constructor called.&quot; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;length = l;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;breadth = b;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;height = h;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// Increase every time object is created
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#ff0000"><b>objectCount++;</b></font>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double Volume() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return length * breadth * height;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;private:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double length;&#160;&#160;&#160;&#160;&#160;// Length of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double breadth;&#160;&#160;&#160;&#160;// Breadth of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double height;&#160;&#160;&#160;&#160;&#160;// Height of a box
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // Initialize static member of class Box
+    </p>
+    <p>
+      <b><font color="#ff0000">int Box::objectCount = 0;</font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box1(3.3, 1.2, 1.5);&#160;&#160;&#160;&#160;// Declare box1
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box2(8.5, 6.0, 2.0);&#160;&#160;&#160;&#160;// Declare box2
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Print total number of objects.
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Total objects: &quot; &lt;&lt; Box::objectCount &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      --------------------------
+    </p>
+    <p>
+      <font color="#008000">output of the program is : <b>2</b></font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+<node TEXT="&#x645;&#x62a;&#x62f; &#x647;&#x627;&#x6cc; &#x627;&#x633;&#x62a;&#x627;&#x62a;&#x6cc;&#x6a9; &#x6a9;&#x644;&#x627;&#x633;" ID="ID_1201331103" CREATED="1510785581231" MODIFIED="1510785589313">
+<node ID="ID_1718279716" CREATED="1510790362421" MODIFIED="1510790482327"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#000000">A static member function can <b>only access</b>&#160;<b>static data member</b>, other <b>static member functions</b>&#160;and any other <b>functions</b>&#160; from <b>outside the class</b>.</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="&#x628;&#x647; this &#x62f;&#x633;&#x62a;&#x631;&#x633;&#x6cc; &#x646;&#x62f;&#x627;&#x631;&#x646;&#x62f;" FOLDED="true" ID="ID_754166595" CREATED="1510790502811" MODIFIED="1510790512028">
+<node ID="ID_629754935" CREATED="1510790598980" MODIFIED="1510790706543"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class Box {
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<b><font color="#000000">static int objectCount;</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;// Constructor definition
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;Box(double l = 2.0, double b = 2.0, double h = 2.0) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt;&quot;Constructor called.&quot; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;length = l;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;breadth = b;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;height = h;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// Increase every time object is created
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b><font color="#000000">objectCount++;</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double Volume() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return length * breadth * height;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<b><font color="#000000">static int getCount() { </font></b>
+    </p>
+    <p>
+      <b><font color="#000000">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return objectCount; </font></b>
+    </p>
+    <p>
+      <b><font color="#000000">&#160;&#160;&#160;&#160;&#160;&#160;}</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;private:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double length;&#160;&#160;&#160;&#160;&#160;// Length of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double breadth;&#160;&#160;&#160;&#160;// Breadth of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double height;&#160;&#160;&#160;&#160;&#160;// Height of a box
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // Initialize static member of class Box
+    </p>
+    <p>
+      <b><font color="#000000">int Box::objectCount = 0;</font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;// Print total number of objects before creating object.
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Inital Stage Count: &quot; &lt;&lt; <b><font color="#000000">Box::getCount()</font></b>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box1(3.3, 1.2, 1.5);&#160;&#160;&#160;&#160;// Declare box1
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box2(8.5, 6.0, 2.0);&#160;&#160;&#160;&#160;// Declare box2
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Print total number of objects after creating object.
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Final Stage Count: &quot; &lt;&lt; <b><font color="#000000">Box::getCount()</font></b>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      -------------------------
+    </p>
+    <p>
+      <font color="#008000">output is : Initial stage count : 0 </font>
+    </p>
+    <p>
+      <font color="#008000">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Final stage count&#160;&#160;&#160;: 2</font>
     </p>
   </body>
 </html>
