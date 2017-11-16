@@ -1186,7 +1186,395 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Inheritance" POSITION="left" ID="ID_157631212" CREATED="1506962182299" MODIFIED="1506962188611"/>
+<node TEXT="Inheritance" FOLDED="true" POSITION="left" ID="ID_157631212" CREATED="1506962182299" MODIFIED="1506962188611">
+<node TEXT="Syntax" ID="ID_189295676" CREATED="1510803156610" MODIFIED="1510803161443">
+<node FOLDED="true" ID="ID_1732659230" CREATED="1510803162442" MODIFIED="1510803173772"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class derived-class: <b>access-specifier</b>&#160;base-class
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+<node TEXT="access-specifier is one of public, protected, or private and by default it&apos;s private" ID="ID_822876973" CREATED="1510803175610" MODIFIED="1510803201835"/>
+<node ID="ID_740320279" CREATED="1510803276618" MODIFIED="1510803319212"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      // Base class
+    </p>
+    <p>
+      class Shape {
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setWidth(int w) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;width = w;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setHeight(int h) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;height = h;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160; <b><font color="#000000">protected:</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;int width;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;int height;
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // Derived class
+    </p>
+    <p>
+      <b><font color="#000000">class Rectangle: public Shape {</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;int getArea() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return (width * height);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;Rectangle Rect;
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;Rect.setWidth(5);
+    </p>
+    <p>
+      &#160;&#160;&#160;Rect.setHeight(7);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Print the area of the object.
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Total area: &quot; &lt;&lt; Rect.getArea() &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1146168596" CREATED="1510803578750" MODIFIED="1510803598844"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>access-specifier</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+<node TEXT="public" ID="ID_137523466" CREATED="1510803858258" MODIFIED="1510803861450">
+<node ID="ID_1257220461" CREATED="1510803886978" MODIFIED="1510803978915"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Base class's <b>public and protected</b>&#160;members become <b>public and protected</b>&#160;member of the derived class too
+    </p>
+    <p>
+      <font color="#ff0000">but private members never visible to us</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="private" ID="ID_481891050" CREATED="1510803861633" MODIFIED="1510803882974">
+<icon BUILTIN="gohome"/>
+<node ID="ID_1183763126" CREATED="1510804014481" MODIFIED="1510804098058"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Base class's <b>public and protected</b>&#160;members become <b>private</b>&#160; members of derived class
+    </p>
+    <p>
+      <font color="#ff0000">but private members never visible to us</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="protected" ID="ID_1738875209" CREATED="1510803863385" MODIFIED="1510803866146">
+<node ID="ID_1422938440" CREATED="1510804054586" MODIFIED="1510804108739"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Base class's <b>public and protected</b>&#160;members become <b>protected</b>&#160; members of derived class
+    </p>
+    <p>
+      <font color="#ff0000">but private members never visible to us</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="&#x645;&#x6cc; &#x62a;&#x648;&#x627;&#x646; &#x627;&#x632; &#x686;&#x646;&#x62f; &#x6a9;&#x644;&#x627;&#x633; &#x628;&#x627;&#x647;&#x645; &#x627;&#x631;&#x62b; &#x628;&#x631;&#x62f;" ID="ID_1257085945" CREATED="1510803220298" MODIFIED="1510803237339">
+<node TEXT="Syntax" ID="ID_1837467935" CREATED="1510804251779" MODIFIED="1510804254483">
+<node TEXT="class derived-class: access baseA, access baseB...." ID="ID_1999313813" CREATED="1510804237770" MODIFIED="1510804244320">
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="example" FOLDED="true" ID="ID_69213629" CREATED="1510804636905" MODIFIED="1510804639907">
+<node ID="ID_1742027828" CREATED="1510804640777" MODIFIED="1510804710790"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      // Base class Shape
+    </p>
+    <p>
+      <font color="#ff0000">class Shape </font>{
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setWidth(int w) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;width = w;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setHeight(int h) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;height = h;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">protected: </font></b>
+    </p>
+    <p>
+      <b><font color="#000000">&#160;&#160;&#160;&#160;&#160;&#160;int width; </font></b>
+    </p>
+    <p>
+      <b><font color="#000000">&#160;&#160;&#160;&#160;&#160;&#160;int height;</font></b>
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // Base class PaintCost
+    </p>
+    <p>
+      <font color="#ff0000">class PaintCost</font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<b><font color="#000000">int getCost(int area) { </font></b>
+    </p>
+    <p>
+      <b><font color="#000000">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return area * 70; </font></b>
+    </p>
+    <p>
+      <b><font color="#000000">&#160;&#160;&#160;&#160;&#160;&#160;}</font></b>
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // Derived class
+    </p>
+    <p>
+      <b><font color="#ff0000">class Rectangle</font><font color="#000000">: </font><font color="#0000c0">public Shape, public PaintCost</font><font color="#000000">&#160;{</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;int getArea() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return (width * height);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;Rectangle Rect;
+    </p>
+    <p>
+      &#160;&#160;&#160;int area;
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;Rect.setWidth(5);
+    </p>
+    <p>
+      &#160;&#160;&#160;Rect.setHeight(7);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">area = Rect.getArea();</font></b>
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;// Print the area of the object.
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Total area: &quot; &lt;&lt; <b><font color="#000000">Rect.getArea()</font></b>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// Print the total cost of painting
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Total paint cost: $&quot; &lt;&lt; <b><font color="#000000">Rect.getCost(area)</font></b>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Access" ID="ID_742666511" CREATED="1510803467641" MODIFIED="1510803472403">
+<node TEXT="Private" ID="ID_1019037485" CREATED="1510803473185" MODIFIED="1510803475635">
+<node TEXT="just same class" ID="ID_501922419" CREATED="1510803483146" MODIFIED="1510803494826"/>
+</node>
+<node TEXT="Public" ID="ID_913707923" CREATED="1510803475818" MODIFIED="1510803478082">
+<node TEXT="all classes and outside of class" ID="ID_495686728" CREATED="1510803496450" MODIFIED="1510803513283"/>
+</node>
+<node TEXT="Protected" ID="ID_895590556" CREATED="1510803478474" MODIFIED="1510803480666">
+<node TEXT="same class and derived classes" ID="ID_850338100" CREATED="1510803515186" MODIFIED="1510803532859"/>
+</node>
+</node>
+</node>
 <node TEXT="Overloading" POSITION="left" ID="ID_846322650" CREATED="1506962190354" MODIFIED="1506962194371"/>
 <node TEXT="Polymorphism" POSITION="left" ID="ID_573865206" CREATED="1506962197859" MODIFIED="1506962202796"/>
 <node TEXT="Abstraction" POSITION="left" ID="ID_354895035" CREATED="1506962203291" MODIFIED="1506962206828"/>
