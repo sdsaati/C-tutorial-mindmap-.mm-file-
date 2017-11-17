@@ -1,7 +1,7 @@
 <map version="freeplane 1.5.9">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="C++" LOCALIZED_STYLE_REF="styles.topic" FOLDED="false" ID="68fkp72s1ral52daf53m4mbdcv" CREATED="1475451792741" MODIFIED="1506961692544" VGAP_QUANTITY="0.6 px"><hook NAME="MapStyle" background="#f7f7f7" zoom="1.364">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;" show_note_icons="true" show_notes_in_map="true"/>
+    <properties fit_to_viewport="false;" show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" FORMAT_AS_HYPERLINK="false" STYLE="oval" UNIFORM_SHAPE="true" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" VGAP_QUANTITY="24.0 pt">
@@ -584,7 +584,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="&#x62a;&#x648;&#x627;&#x628;&#x639; &#x62f;&#x648;&#x633;&#x62a;" ID="ID_406287556" CREATED="1506998875217" MODIFIED="1506998880306">
+<node TEXT="&#x62a;&#x648;&#x627;&#x628;&#x639; &#x62f;&#x648;&#x633;&#x62a;" FOLDED="true" ID="ID_406287556" CREATED="1506998875217" MODIFIED="1506998880306">
 <node TEXT="&#x62a;&#x648;&#x627;&#x628;&#x639; &#x62f;&#x648;&#x633;&#x62a;&#x60c; &#x645;&#x62a;&#x62f; &#x646;&#x6cc;&#x633;&#x62a;&#x646;&#x62f; ! &#x639;&#x636;&#x648;&#x6cc; &#x627;&#x632; &#x6a9;&#x644;&#x627;&#x633; &#x646;&#x6cc;&#x633;&#x62a;&#x646;&#x62f; ! &#x648;&#x644;&#x6cc; &#x645;&#x6cc; &#x62a;&#x648;&#x627;&#x646;&#x646;&#x62f; &#x628;&#x647; &#x62a;&#x645;&#x627;&#x645;&#x6cc; &#x627;&#x639;&#x636;&#x627;&#x6cc; &#x6a9;&#x644;&#x627;&#x633; &#x62f;&#x633;&#x62a;&#x631;&#x633;&#x6cc; &#x62f;&#x627;&#x634;&#x62a;&#x647; &#x628;&#x627;&#x634;&#x646;&#x62f;" ID="ID_1792149037" CREATED="1506998906393" MODIFIED="1506998942154"/>
 <node ID="ID_299697043" CREATED="1506998974201" MODIFIED="1506999085566"><richcontent TYPE="NODE">
 
@@ -879,7 +879,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Courier New" BOLD="false"/>
 </node>
@@ -1012,7 +1011,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Courier New" BOLD="false"/>
 </node>
@@ -1031,7 +1029,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="&#x628;&#x647; this &#x62f;&#x633;&#x62a;&#x631;&#x633;&#x6cc; &#x646;&#x62f;&#x627;&#x631;&#x646;&#x62f;" FOLDED="true" ID="ID_754166595" CREATED="1510790502811" MODIFIED="1510790512028">
@@ -1179,7 +1176,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Courier New" BOLD="false"/>
 </node>
@@ -1200,7 +1196,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Courier New" BOLD="false"/>
 <node TEXT="access-specifier is one of public, protected, or private and by default it&apos;s private" ID="ID_822876973" CREATED="1510803175610" MODIFIED="1510803201835"/>
@@ -1315,7 +1310,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1331,7 +1325,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Courier New" BOLD="false"/>
 <node TEXT="public" ID="ID_137523466" CREATED="1510803858258" MODIFIED="1510803861450">
@@ -1350,7 +1343,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1371,7 +1363,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1391,7 +1382,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1556,7 +1546,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
     </p>
   </body>
 </html>
-
 </richcontent>
 <font NAME="Courier New" BOLD="false"/>
 </node>
@@ -1575,7 +1564,1193 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Overloading" POSITION="left" ID="ID_846322650" CREATED="1506962190354" MODIFIED="1506962194371"/>
+<node TEXT="Overloading" FOLDED="true" POSITION="left" ID="ID_846322650" CREATED="1506962190354" MODIFIED="1510947519318" VGAP_QUANTITY="30.0 px">
+<node TEXT="&#x648;&#x642;&#x62a;&#x6cc; &#x62f;&#x631; &#x6cc;&#x6a9; &#x62d;&#x648;&#x632;&#x647; &#x628;&#x627; &#x6cc;&#x6a9; &#x646;&#x627;&#x645; &#x686;&#x646;&#x62f; &#x67e;&#x6cc;&#x627;&#x62f;&#x647; &#x633;&#x627;&#x632;&#x6cc; &#x628;&#x627; &#x67e;&#x627;&#x631;&#x627;&#x645;&#x62a;&#x631;&#x647;&#x627;&#x6cc; &#x645;&#x62e;&#x62a;&#x644;&#x641; &#x635;&#x648;&#x631;&#x62a; &#x6af;&#x6cc;&#x631;&#x62f;" ID="ID_1070886491" CREATED="1510945133161" MODIFIED="1510945155036"/>
+<node TEXT="Function Overloading" ID="ID_435685056" CREATED="1510946595028" MODIFIED="1510946602078">
+<node ID="ID_52906867" CREATED="1510946789574" MODIFIED="1510946887724"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class printData {
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000c0">void print</font>(<b>int i</b>) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Printing int: &quot; &lt;&lt; i &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000c0">void print</font>(<b>double&#160;&#160;f</b>) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Printing float: &quot; &lt;&lt; f &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000c0">void print</font>(<b>char* c</b>) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Printing character: &quot; &lt;&lt; c &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;printData pd;
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// Call print to print integer</font>
+    </p>
+    <p>
+      &#160;&#160;<font color="#0000c0">&#160;<b>pd.print(5);</b></font>
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// Call print to print float</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#0000c0"><b>pd.print(500.263);</b></font>
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// Call print to print character</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#0000c0"><b>pd.print(&quot;Hello C++&quot;);</b></font>
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="Operator Overloading" ID="ID_1542864198" CREATED="1510946602389" MODIFIED="1510947519317">
+<node TEXT="Like any other function, an overloaded operator has a return type and a parameter list." ID="ID_440812409" CREATED="1510946953888" MODIFIED="1510946962562"/>
+<node TEXT="the list of operators which can be overloaded &#x2212;" FOLDED="true" ID="ID_256373400" CREATED="1510947105557" MODIFIED="1510947121309">
+<node ID="ID_1927702349" CREATED="1510947105560" MODIFIED="1510947105560"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="16.6%">
+          +
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_571470801" CREATED="1510947105562" MODIFIED="1510947105562"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="16.6%">
+          -
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1379401625" CREATED="1510947105564" MODIFIED="1510947105564"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="16.6%">
+          *
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1710364511" CREATED="1510947105566" MODIFIED="1510947105566"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="16.6%">
+          /
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1605734758" CREATED="1510947105568" MODIFIED="1510947105568"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="16.6%">
+          %
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1907879407" CREATED="1510947105570" MODIFIED="1510947105570"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="16.6%">
+          ^
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_678881694" CREATED="1510947105572" MODIFIED="1510947105572"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &amp;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_365018408" CREATED="1510947105574" MODIFIED="1510947105574"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          |
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1427426265" CREATED="1510947105576" MODIFIED="1510947105576"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ~
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1180255791" CREATED="1510947105578" MODIFIED="1510947105578"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          !
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_955891230" CREATED="1510947105580" MODIFIED="1510947105580"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ,
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1060729111" CREATED="1510947105582" MODIFIED="1510947105582"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          =
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1491539759" CREATED="1510947105585" MODIFIED="1510947105585"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &lt;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_972329903" CREATED="1510947105587" MODIFIED="1510947105587"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &gt;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1185213924" CREATED="1510947105589" MODIFIED="1510947105589"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &lt;=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_687407844" CREATED="1510947105591" MODIFIED="1510947105591"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &gt;=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1866416757" CREATED="1510947105593" MODIFIED="1510947105593"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ++
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1725509087" CREATED="1510947105594" MODIFIED="1510947105594"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          --
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_801820921" CREATED="1510947105596" MODIFIED="1510947105596"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &lt;&lt;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1630364251" CREATED="1510947105598" MODIFIED="1510947105598"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &gt;&gt;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_949543395" CREATED="1510947105599" MODIFIED="1510947105599"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ==
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_613001168" CREATED="1510947105601" MODIFIED="1510947105601"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          !=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1273665663" CREATED="1510947105603" MODIFIED="1510947105603"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &amp;&amp;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1787502153" CREATED="1510947105605" MODIFIED="1510947105605"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ||
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_495780825" CREATED="1510947105607" MODIFIED="1510947105607"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          +=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_602593303" CREATED="1510947105608" MODIFIED="1510947105608"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          -=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1094638738" CREATED="1510947105610" MODIFIED="1510947105610"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          /=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_828078055" CREATED="1510947105612" MODIFIED="1510947105612"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          %=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_800020658" CREATED="1510947105614" MODIFIED="1510947105614"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ^=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_999610149" CREATED="1510947105616" MODIFIED="1510947105616"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &amp;=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_298168185" CREATED="1510947105618" MODIFIED="1510947105618"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          |=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_285050045" CREATED="1510947105620" MODIFIED="1510947105620"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          *=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1648322195" CREATED="1510947105622" MODIFIED="1510947105622"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &lt;&lt;=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1121304201" CREATED="1510947105624" MODIFIED="1510947105624"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          &gt;&gt;=
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1474076749" CREATED="1510947105626" MODIFIED="1510947105626"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          []
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1594498679" CREATED="1510947105627" MODIFIED="1510947105627"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          ()
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1251056276" CREATED="1510947105629" MODIFIED="1510947105629"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          -&gt;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1294288213" CREATED="1510947105631" MODIFIED="1510947105631"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          -&gt;*
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_603976598" CREATED="1510947105633" MODIFIED="1510947105633"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          new
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_451234801" CREATED="1510947105635" MODIFIED="1510947105635"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          new []
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_377539593" CREATED="1510947105637" MODIFIED="1510947105637"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          delete
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1576417564" CREATED="1510947105639" MODIFIED="1510947105639"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td>
+          delete []
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="the list of operators, which can not be overloaded &#x2212;" FOLDED="true" ID="ID_982320734" CREATED="1510947105640" MODIFIED="1510947124730">
+<node ID="ID_418686307" CREATED="1510947105646" MODIFIED="1510947105646"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="25%">
+          ::
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1655091003" CREATED="1510947105648" MODIFIED="1510947105648"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="25%">
+          .*
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_28243571" CREATED="1510947105649" MODIFIED="1510947105649"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="25%">
+          .
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1043368173" CREATED="1510947105650" MODIFIED="1510947105650"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered" style="text-align: center">
+      <tr>
+        <td width="25%">
+          ?:
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Example" FOLDED="true" ID="ID_1397880558" CREATED="1510947144698" MODIFIED="1510947147307">
+<node ID="ID_494254647" CREATED="1510947147993" MODIFIED="1510947400939"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class Box {
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double getVolume(void) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return length * breadth * height;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setLength( double len ) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;length = len;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setBreadth( double bre ) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;breadth = bre;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void setHeight( double hei ) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;height = hei;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      <font color="#008000">// Overload + operator to add two Box objects.</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#000000"><b>Box</b></font>&#160;operator<font color="#ff0000"><b>+</b></font>(<b>const Box&amp; <font color="#ff0000">b</font></b>) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Box box;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;box.length = this-&gt;length + <font color="#ff0000"><b>b</b></font>.length;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;box.breadth = this-&gt;breadth + <b><font color="#ff0000">b</font></b>.breadth;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;box.height = this-&gt;height + <font color="#ff0000"><b>b</b></font>.height;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b><font color="#000000">return box</font></b>;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;private:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double length;&#160;&#160;&#160;&#160;&#160;&#160;// Length of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double breadth;&#160;&#160;&#160;&#160;&#160;// Breadth of a box
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;double height;&#160;&#160;&#160;&#160;&#160;&#160;// Height of a box
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#008000">// Main function for the program</font>
+    </p>
+    <p>
+      int main() {
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box1;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#008000">// Declare Box1 of type Box</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box2;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#008000">// Declare Box2 of type Box</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;Box Box3;&#160;&#160;&#160;&#160;&#160;&#160;<font color="#008000">// Declare Box3 of type Box</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;double volume = 0.0;&#160;&#160;&#160;&#160;&#160;// Store the volume of a box here
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// box 1 specification</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;Box1.setLength(6.0);
+    </p>
+    <p>
+      &#160;&#160;&#160;Box1.setBreadth(7.0);
+    </p>
+    <p>
+      &#160;&#160;&#160;Box1.setHeight(5.0);
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// box 2 specification</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;Box2.setLength(12.0);
+    </p>
+    <p>
+      &#160;&#160;&#160;Box2.setBreadth(13.0);
+    </p>
+    <p>
+      &#160;&#160;&#160;Box2.setHeight(10.0);
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// volume of box 1</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;volume = Box1.getVolume();
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Volume of Box1 : &quot; &lt;&lt; volume &lt;&lt;endl;
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// volume of box 2</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;volume = Box2.getVolume();
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Volume of Box2 : &quot; &lt;&lt; volume &lt;&lt;endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// Add two object as follows:</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#ff0000"><b>Box3 = Box1 + Box2;</b></font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// volume of box 3</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;volume = Box3.getVolume();
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Volume of Box3 : &quot; &lt;&lt; volume &lt;&lt;endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="Polymorphism" POSITION="left" ID="ID_573865206" CREATED="1506962197859" MODIFIED="1506962202796"/>
 <node TEXT="Abstraction" POSITION="left" ID="ID_354895035" CREATED="1506962203291" MODIFIED="1506962206828"/>
 <node TEXT="Encapsulation" POSITION="left" ID="ID_601664393" CREATED="1506962207347" MODIFIED="1506962210132"/>
