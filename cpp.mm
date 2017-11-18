@@ -351,7 +351,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 <node TEXT="strcpy(s1, s2);&#xa;Copies string s2 into string s1.&#xa;&#xa;&#xa;strcat(s1, s2);&#xa;Concatenates string s2 onto the end of string s1.&#xa;&#xa;&#xa;strlen(s1);&#xa;Returns the length of string s1.&#xa;&#xa;&#xa;strcmp(s1, s2);&#xa;Returns 0 if s1 and s2 are the same; less than 0 if s1&lt;s2; greater than 0 if s1&gt;s2.&#xa;&#xa;&#xa;strchr(s1, ch);&#xa;Returns a pointer to the first occurrence of character ch in string s1.&#xa;&#xa;strstr(s1, s2);&#xa;Returns a pointer to the first occurrence of string s2 in string s1." ID="ID_484388925" CREATED="1506961900028" MODIFIED="1506961924487"/>
 </node>
 </node>
-<node TEXT="&#x67e;&#x648;&#x6cc;&#x646;&#x62a;&#x631;" POSITION="right" ID="ID_1406197762" CREATED="1506962107283" MODIFIED="1506962111268" VGAP_QUANTITY="0.6 px">
+<node TEXT="&#x67e;&#x648;&#x6cc;&#x646;&#x62a;&#x631;" FOLDED="true" POSITION="right" ID="ID_1406197762" CREATED="1506962107283" MODIFIED="1506962111268" VGAP_QUANTITY="0.6 px">
 <node TEXT="type *var-name;" ID="ID_691853111" CREATED="1506962855585" MODIFIED="1506962857209"/>
 <node TEXT="* &#x6cc;&#x639;&#x646;&#x6cc; &#x645;&#x6a9;&#x627;&#x646;&#x634; &#x648;&#xa;&amp; &#x6cc;&#x639;&#x646;&#x6cc; &#x622;&#x62f;&#x631;&#x633;&#x634;" ID="ID_1730645646" CREATED="1506964328198" MODIFIED="1506964342948"/>
 <node TEXT="int    *ip;    // pointer to an integer&#xa;double *dp;    // pointer to a double&#xa;float  *fp;    // pointer to a float&#xa;char   *ch     // pointer to character" ID="ID_559383125" CREATED="1506962863464" MODIFIED="1506962864129"/>
@@ -3774,7 +3774,492 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Preprocessor" POSITION="left" ID="ID_280139109" CREATED="1506962259458" MODIFIED="1506962264555"/>
+<node TEXT="Preprocessor" FOLDED="true" POSITION="left" ID="ID_280139109" CREATED="1506962259458" MODIFIED="1506962264555">
+<node ID="ID_1892105011" CREATED="1510996246775" MODIFIED="1510996276393"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      means &quot;<b>Before Compile Starts Do These Things</b>&quot;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1054875127" CREATED="1510996317671" MODIFIED="1510996340601"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      they<b>&#160;do not</b>&#160;end with a semicolon (;)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Some of PreProcessors" ID="ID_19437711" CREATED="1510996375329" MODIFIED="1510996387953">
+<node ID="ID_1433267512" CREATED="1510996389601" MODIFIED="1510996398266"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>#define</b>&#160;macro-name replacement-text
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1568418496" CREATED="1510996411154" MODIFIED="1510996425932"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>#define</b>&#160;<font color="#ff0000">PI</font>&#160;<font color="#000000">3.14159</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="PI" ID="ID_185316556" CREATED="1510996527034" MODIFIED="1510996528195"/>
+</node>
+<node ID="ID_9115351" CREATED="1510996499250" MODIFIED="1510996512356"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>#define</b>&#160;<font color="#ff0000">MIN(a,b)</font>&#160;<font color="#000000">(((a)&lt;(b)) ? a : b)</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="MIN(i, j)" ID="ID_1253203489" CREATED="1510996521970" MODIFIED="1510996523795"/>
+</node>
+</node>
+<node ID="ID_799655832" CREATED="1510996644756" MODIFIED="1510996653861"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>#ifdef</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_173067268" CREATED="1510996655637" MODIFIED="1510996827022"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>#ifndef </b><font color="#ff0000">DEBUG</font>
+    </p>
+    <p>
+      &#160;&#160;&#160; <b>#define</b>&#160;<font color="#ff0000">DEBUG</font>
+    </p>
+    <p>
+      <b>#endif</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#000000">int main () { </font>
+    </p>
+    <p>
+      <font color="#000000">&#160;</font>
+    </p>
+    <p>
+      <b>#ifdef </b><font color="#ff0000">DEBUG</font>
+    </p>
+    <p>
+      &#160;&#160;<font color="#000000">&#160;cerr &lt;&lt;&quot;Trace: Inside main function&quot; &lt;&lt; endl;</font>
+    </p>
+    <p>
+      <b>#endif</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>#if <font color="#ff0000">0</font></b>
+    </p>
+    <p>
+      &#160;&#160;<font color="#000000">&#160;</font><font color="#008000">/* This is commented part */</font>
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160;&#160;cout &lt;&lt; MKSTR(HELLO C++) &lt;&lt; endl;</font>
+    </p>
+    <p>
+      <b>#endif</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;<font color="#000000">&#160;&#160;cout &lt;&lt;&quot;The minimum is 2&quot; &lt;&lt; endl;</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>#ifdef </b><font color="#ff0000">DEBUG</font>
+    </p>
+    <p>
+      &#160;&#160;<font color="#000000">&#160;cerr &lt;&lt;&quot;Trace: Coming out of main function&quot; &lt;&lt; endl;</font>
+    </p>
+    <p>
+      <b>#endif</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1344455422" CREATED="1510997052130" MODIFIED="1510997056893"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>#</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_141664484" CREATED="1510997066803" MODIFIED="1510997128679"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #define MKSTR( x ) <font color="#ff0000"><b>#x</b></font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#000000">int main () { </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160;&#160;cout &lt;&lt;</font>&#160;<b>MKSTR(HELLO C++)</b>&#160;<font color="#000000">&lt;&lt; endl; </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160;&#160;return 0; </font>
+    </p>
+    <p>
+      <font color="#000000">}</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+<node TEXT="is equal to" ID="ID_183582961" CREATED="1510997084843" MODIFIED="1510997185093">
+<node ID="ID_165860895" CREATED="1510997107900" MODIFIED="1510997116694"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      cout &lt;&lt; <font color="#0000c0"><b>&quot;HELLO C++&quot;</b></font>&#160;&lt;&lt; endl;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+</node>
+<node ID="ID_1521083320" CREATED="1510997135524" MODIFIED="1510997139693"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>##</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1453608286" CREATED="1510997150060" MODIFIED="1510997173455"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #define concat(a, b) <font color="#ff0000"><b>a ## b</b></font>
+    </p>
+    <p>
+      <font color="#000000">int main() { </font>
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160;&#160;int xy = 100; </font>
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160; </font>
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160;&#160;cout &lt;&lt;</font>&#160;<b>concat(x, y);</b>
+    </p>
+    <p>
+      &#160; <font color="#000000">&#160;return 0; </font>
+    </p>
+    <p>
+      <font color="#000000">}</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="is equal to" ID="ID_1753155538" CREATED="1510997175149" MODIFIED="1510997182069">
+<node ID="ID_1586327924" CREATED="1510997187725" MODIFIED="1510997204592"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      cout &lt;&lt; <font color="#0000c0"><b>xy</b></font>;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Predefined C++ Macros" ID="ID_545503213" CREATED="1510997219685" MODIFIED="1510997230998">
+<node ID="ID_379002290" CREATED="1510997236825" MODIFIED="1510997236825"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>__LINE__</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_65564364" CREATED="1510997236827" MODIFIED="1510997236827"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This contains the current line number of the program when it is being compiled.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="6" OBJECT="java.lang.Long|6" ID="ID_1258225340" CREATED="1510997281438" MODIFIED="1510997282476"/>
+</node>
+</node>
+<node ID="ID_1137863416" CREATED="1510997236837" MODIFIED="1510997236837"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>__FILE__</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1033122586" CREATED="1510997236841" MODIFIED="1510997236841"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This contains the current file name of the program when it is being compiled.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="test.cpp" ID="ID_1537125327" CREATED="1510997283935" MODIFIED="1510997289216"/>
+</node>
+</node>
+<node ID="ID_1350011983" CREATED="1510997236851" MODIFIED="1510997236851"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>__DATE__</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_668050208" CREATED="1510997236855" MODIFIED="1510997236855"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This contains a string of the form month/day/year that is the date of the translation of the source file into object code.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Feb 28 2011" ID="ID_1742625749" CREATED="1510997290407" MODIFIED="1510997298164"/>
+</node>
+</node>
+<node ID="ID_891132741" CREATED="1510997236864" MODIFIED="1510997236864"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>__TIME__</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1636375320" CREATED="1510997236867" MODIFIED="1510997236867"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This contains a string of the form hour:minute:second that is the time at which the program was compiled.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="18:52:48" ID="ID_816181405" CREATED="1510997299742" MODIFIED="1510997300986"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="Multithreading" POSITION="left" ID="ID_755380825" CREATED="1506962276979" MODIFIED="1506962281507"/>
 <node TEXT="Web Programming" POSITION="left" ID="ID_316005598" CREATED="1506962286931" MODIFIED="1506962290635"/>
 <node TEXT="References" FOLDED="true" POSITION="right" ID="ID_688505160" CREATED="1506962144780" MODIFIED="1506962146348">
