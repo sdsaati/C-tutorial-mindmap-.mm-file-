@@ -394,6 +394,823 @@ for ( int i = 0; i &lt; 5; i++ ) {
 <node TEXT="&#x633;&#x639;&#x6cc; &#x634;&#x648;&#x62f; &#x622;&#x62f;&#x631;&#x633; &#x6cc;&#x6a9; &#x645;&#x62a;&#x63a;&#x6cc;&#x631; &#x645;&#x62d;&#x644;&#x6cc; &#x628;&#x631;&#x6af;&#x631;&#x62f;&#x627;&#x646;&#x62f;&#x647; &#x646;&#x634;&#x648;&#x62f; ! &#x627;&#x6af;&#x631; &#x646;&#x6cc;&#x627;&#x632; &#x62f;&#x627;&#x631;&#x6cc;&#x645; &#x627;&#x633;&#x62a;&#x627;&#x62a;&#x6cc;&#x6a9;&#x634; &#x6a9;&#x646;&#x6cc;&#x645; &#x628;&#x639;&#x62f; &#x622;&#x62f;&#x631;&#x633;&#x634;&#x648; &#x628;&#x631;&#x6af;&#x631;&#x62f;&#x648;&#x646;&#x6cc;&#x645;" ID="ID_1361814964" CREATED="1506964482236" MODIFIED="1506964511870"/>
 </node>
 </node>
+<node TEXT="smart pointers" ID="ID_48094074" CREATED="1511004586958" MODIFIED="1511004591952">
+<node TEXT="https://msdn.microsoft.com/en-us/library/hh279674.aspx" ID="ID_2011320" CREATED="1511004592727" MODIFIED="1511004593408"/>
+</node>
+</node>
+<node TEXT="Exceptions" FOLDED="true" POSITION="left" ID="ID_1111249213" CREATED="1506962237083" MODIFIED="1506962242259">
+<node TEXT="Exceptions provide a way to transfer control from one part of a program to another" ID="ID_389738718" CREATED="1510981976591" MODIFIED="1510981978407"/>
+<node TEXT="3 keywords :" ID="ID_1532772654" CREATED="1510981997239" MODIFIED="1510982005000">
+<node TEXT="try" ID="ID_481086318" CREATED="1510982026288" MODIFIED="1510982028784">
+<node ID="ID_1047993520" CREATED="1510982050406" MODIFIED="1510982050406"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    A <b>try</b> block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="catch" ID="ID_939216777" CREATED="1510982029007" MODIFIED="1510982030752">
+<node ID="ID_1259241104" CREATED="1510982046422" MODIFIED="1510982046422"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The <b>catch</b> keyword indicates the catching of an exception.
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="catch(...){}" ID="ID_511714975" CREATED="1510986350909" MODIFIED="1510986400998">
+<node TEXT="can catch all exceptions" ID="ID_1829844406" CREATED="1510986357365" MODIFIED="1510986367094"/>
+</node>
+<node TEXT="catch(ExceptionType e){}" ID="ID_1383420078" CREATED="1510986369373" MODIFIED="1510986384046">
+<node TEXT="can catch exception of type ExeptionType" ID="ID_14017287" CREATED="1510986385382" MODIFIED="1510986396910"/>
+</node>
+</node>
+</node>
+<node TEXT="throw" ID="ID_1327957614" CREATED="1510982031152" MODIFIED="1510982033064">
+<node ID="ID_1676377353" CREATED="1510982039519" MODIFIED="1510982039519"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    A program throws an exception when a problem shows up. This is done using a <b>throw</b> keyword.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="Example" ID="ID_816652742" CREATED="1510986461214" MODIFIED="1510986463159">
+<node ID="ID_411349511" CREATED="1510986469078" MODIFIED="1510986519066"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      double division(int a, int b) {
+    </p>
+    <p>
+      &#160;&#160;&#160;if( b == 0 ) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000c0"><b>throw</b></font>&#160;&quot;Division by zero condition!&quot;;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;return (a/b);
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main () {
+    </p>
+    <p>
+      &#160;&#160;&#160;int x = 50;
+    </p>
+    <p>
+      &#160;&#160;&#160;int y = 0;
+    </p>
+    <p>
+      &#160;&#160;&#160;double z = 0;
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#0000c0">try { </font>
+    </p>
+    <p>
+      <font color="#0000c0">&#160;&#160;&#160;&#160;&#160;&#160;z = division(x, y); </font>
+    </p>
+    <p>
+      <font color="#0000c0">&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; z &lt;&lt; endl; </font>
+    </p>
+    <p>
+      <font color="#0000c0">&#160;&#160;&#160;}</font>&#160;<font color="#ff0000">catch (</font><font color="#0000c0"><b>const char*</b></font><b><font color="#ff0000">&#160;msg</font></b><font color="#ff0000">) { </font>
+    </p>
+    <p>
+      <font color="#ff0000">&#160;&#160;&#160;&#160;&#160;cerr &lt;&lt; msg &lt;&lt; endl; </font>
+    </p>
+    <p>
+      <font color="#ff0000">&#160;&#160;&#160;}</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="std::exception" FOLDED="true" ID="ID_1091251031" CREATED="1510993025999" MODIFIED="1510993037192">
+<node ID="ID_198400556" CREATED="1510993038320" MODIFIED="1510993038320"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::exception</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1889101357" CREATED="1510993038325" MODIFIED="1510993038325"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            An exception and parent class of all the standard C++ exceptions.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1741149304" CREATED="1510993038334" MODIFIED="1510993038334"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::bad_alloc</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_375594920" CREATED="1510993038337" MODIFIED="1510993038337"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This can be thrown by <b>new</b>.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_928035125" CREATED="1510993038344" MODIFIED="1510993038344"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::bad_cast</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1490537520" CREATED="1510993038347" MODIFIED="1510993038347"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This can be thrown by <b>dynamic_cast</b>.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_792526948" CREATED="1510993038352" MODIFIED="1510993038352"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::bad_exception</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1228699752" CREATED="1510993038354" MODIFIED="1510993038354"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is useful device to handle unexpected exceptions in a C++ program.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1124102629" CREATED="1510993038359" MODIFIED="1510993038359"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::bad_typeid</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1292373487" CREATED="1510993038361" MODIFIED="1510993038361"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This can be thrown by <b>typeid</b>.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_697427978" CREATED="1510993038367" MODIFIED="1510993038367"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::logic_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_327395058" CREATED="1510993038370" MODIFIED="1510993038370"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            An exception that theoretically can be detected by reading the code.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1423251570" CREATED="1510993038377" MODIFIED="1510993038377"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::domain_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1210518561" CREATED="1510993038380" MODIFIED="1510993038380"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is an exception thrown when a mathematically invalid domain is used.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_814099920" CREATED="1510993038386" MODIFIED="1510993038386"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::invalid_argument</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_517752932" CREATED="1510993038389" MODIFIED="1510993038389"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is thrown due to invalid arguments.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_23433782" CREATED="1510993038396" MODIFIED="1510993038396"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::length_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_407227500" CREATED="1510993038399" MODIFIED="1510993038399"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is thrown when a too big std::string is created.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1517723221" CREATED="1510993038404" MODIFIED="1510993038404"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::out_of_range</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_282856120" CREATED="1510993038406" MODIFIED="1510993038406"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This can be thrown by the 'at' method, for example a std::vector and std::bitset&lt;&gt;::operator[]().
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_1207502470" CREATED="1510993038413" MODIFIED="1510993038413"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::runtime_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_358645195" CREATED="1510993038415" MODIFIED="1510993038415"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            An exception that theoretically cannot be detected by reading the code.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_866013088" CREATED="1510993038421" MODIFIED="1510993038421"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::overflow_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_145651532" CREATED="1510993038424" MODIFIED="1510993038424"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is thrown if a mathematical overflow occurs.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_956397693" CREATED="1510993038429" MODIFIED="1510993038429"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::range_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1348740710" CREATED="1510993038432" MODIFIED="1510993038432"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is occurred when you try to store a value which is out of range.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_383180377" CREATED="1510993038437" MODIFIED="1510993038437"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            <b>std::underflow_error</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_593831759" CREATED="1510993038440" MODIFIED="1510993038440"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          <p>
+            This is thrown if a mathematical underflow occurs.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="Define New Exceptions" ID="ID_1945837385" CREATED="1510993157857" MODIFIED="1510993166450">
+<node ID="ID_1042108157" CREATED="1510993275203" MODIFIED="1510993300133"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      by inheriting and overriding exception class (<b>std::exception</b>) functionality
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1245184555" CREATED="1510993311908" MODIFIED="1510993418887"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      #include <b>&lt;exception&gt;</b>
+    </p>
+    <p>
+      using namespace std;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#0000c0"><b>struct MyException : public exception</b></font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;const char * what () const throw () {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;return &quot;C++ Exception&quot;;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      int main() {
+    </p>
+    <p>
+      &#160;&#160;&#160;try {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<b>throw MyException();</b>
+    </p>
+    <p>
+      &#160;&#160;&#160;} catch(<b><font color="#0000c0">MyException&amp;</font>&#160;e</b>) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;std::cout &lt;&lt; &quot;MyException caught&quot; &lt;&lt; std::endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;std::cout &lt;&lt; e.what() &lt;&lt; std::endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;} catch(std::exception&amp; e) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;//Other errors
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
 </node>
 <node TEXT="Dynamic Memory" FOLDED="true" POSITION="left" ID="ID_210870616" CREATED="1506962242722" MODIFIED="1506962245907">
 <node TEXT="RAM has 2 sections" ID="ID_563249530" CREATED="1510994629200" MODIFIED="1510994638113">
@@ -4260,8 +5077,86 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Multithreading" POSITION="left" ID="ID_755380825" CREATED="1506962276979" MODIFIED="1506962281507"/>
-<node TEXT="Web Programming" POSITION="left" ID="ID_316005598" CREATED="1506962286931" MODIFIED="1506962290635"/>
+<node TEXT="Multithreading" FOLDED="true" POSITION="left" ID="ID_755380825" CREATED="1506962276979" MODIFIED="1511004598624" VGAP_QUANTITY="30.0 px">
+<node TEXT="with Qt Library" ID="ID_579937996" CREATED="1511003722734" MODIFIED="1511004598624">
+<node ID="ID_715158298" CREATED="1511003739728" MODIFIED="1511003789354"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;QDebug&gt;
+    </p>
+    <p>
+      <font color="#0000c0">#include &lt;QThread&gt;</font>
+    </p>
+    <p>
+      #include &lt;QString&gt;
+    </p>
+    <p>
+      <font color="#0000c0">#include &lt;qtconcurrentrun.h&gt;</font>
+    </p>
+    <p>
+      #include &lt;QApplication&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#0000c0">using namespace QtConcurrent;</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      void <font color="#0000c0">hello</font>(QString name)
+    </p>
+    <p>
+      {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;qDebug() &lt;&lt; &quot;Hello&quot; &lt;&lt; name &lt;&lt; &quot;from&quot; &lt;&lt; QThread::currentThread();
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main(int argc, char **argv)
+    </p>
+    <p>
+      {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;QApplication app(argc, argv);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;<b><font color="#0000c0">QFuture&lt;void&gt; f1 = run(hello, QString(&quot;Alice&quot;)); </font></b>
+    </p>
+    <p>
+      <b><font color="#0000c0">&#160;&#160;&#160;&#160;QFuture&lt;void&gt; f2 = run(hello, QString(&quot;Bob&quot;));</font></b>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;<font color="#0000c0">f1.waitForFinished();</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;<font color="#0000c0">f2.waitForFinished();</font>
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
 <node TEXT="References" FOLDED="true" POSITION="right" ID="ID_688505160" CREATED="1506962144780" MODIFIED="1506962146348">
 <node TEXT="Passing parameters by references" ID="ID_1523704540" CREATED="1506964635404" MODIFIED="1506964642869">
 <node TEXT="void swap(int&amp; x, int&amp; y);" ID="ID_697681245" CREATED="1506964667844" MODIFIED="1506964678077">
@@ -4274,8 +5169,157 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Date&amp;Time" POSITION="right" ID="ID_1100306792" CREATED="1506962153691" MODIFIED="1506962158844"/>
-<node TEXT="I/O" POSITION="right" ID="ID_1442038166" CREATED="1506962159411" MODIFIED="1506962162420"/>
+<node TEXT="Date&amp;Time" FOLDED="true" POSITION="right" ID="ID_1100306792" CREATED="1506962153691" MODIFIED="1506962158844">
+<node TEXT="struct tm {&#xa;   int tm_sec;   // seconds of minutes from 0 to 61&#xa;   int tm_min;   // minutes of hour from 0 to 59&#xa;   int tm_hour;  // hours of day from 0 to 24&#xa;   int tm_mday;  // day of month from 1 to 31&#xa;   int tm_mon;   // month of year from 0 to 11&#xa;   int tm_year;  // year since 1900&#xa;   int tm_wday;  // days since sunday&#xa;   int tm_yday;  // days since January 1st&#xa;   int tm_isdst; // hours of daylight savings time&#xa;}" ID="ID_1390581815" CREATED="1510998298591" MODIFIED="1510998300632">
+<font NAME="Courier New" BOLD="false"/>
+</node>
+<node ID="ID_1696231245" CREATED="1510998199671" MODIFIED="1510998227562"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      #include &lt;ctime&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      using namespace std;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main() {
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// current date/time based on current system</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;time_t now = time(0);
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// convert now to string form</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;char* dt = ctime(&amp;now);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;The local date and time is: &quot; &lt;&lt; dt &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// convert now to tm struct for UTC</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;tm *gmtm = gmtime(&amp;now);
+    </p>
+    <p>
+      &#160;&#160;&#160;dt = asctime(gmtm);
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;The UTC date and time is:&quot;&lt;&lt; dt &lt;&lt; endl;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+<node ID="ID_11737460" CREATED="1510998211550" MODIFIED="1510998284337"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      #include &lt;ctime&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      using namespace std;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main() {
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// current date/time based on current system</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#0000c0">time_t</font>&#160;now = <font color="#0000c0">time(0);</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Number of sec since January 1,1970:&quot; &lt;&lt; now &lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#0000c0">tm *</font>ltm = <font color="#0000c0">localtime</font>(&amp;now);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// print various components of tm structure.</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Year&quot; &lt;&lt; 1970 + <font color="#0000c0">ltm-&gt;tm_year</font>&lt;&lt;endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Month: &quot;&lt;&lt; 1 + <font color="#0000c0">ltm-&gt;tm_mon</font>&lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Day: &quot;&lt;&lt;&#160;&#160;<font color="#0000c0">ltm-&gt;tm_mday</font>&#160; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Time: &quot;&lt;&lt; 1 + <font color="#0000c0">ltm-&gt;tm_hour</font>&#160; &lt;&lt; &quot;:&quot;;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; 1 + <font color="#0000c0">ltm-&gt;tm_min</font>&#160;&lt;&lt; &quot;:&quot;;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; 1 + <font color="#0000c0">ltm-&gt;tm_sec</font>&#160;&lt;&lt; endl;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
 <node TEXT="Data Structure" FOLDED="true" POSITION="right" ID="ID_1023166227" CREATED="1506962163819" MODIFIED="1506962169068">
 <node TEXT="struct Books {&#xa;   char  title[50];&#xa;   char  author[50];&#xa;   char  subject[100];&#xa;   int   book_id;&#xa;} book;" ID="ID_251998085" CREATED="1506966987145" MODIFIED="1506966988122">
 <node TEXT="struct Books Book1;        // Declare Book1 of type Book" ID="ID_1410623769" CREATED="1506967006809" MODIFIED="1506967007521">
@@ -4312,821 +5356,6 @@ for ( int i = 0; i &lt; 5; i++ ) {
 <node TEXT="Books Book1, Book2;" ID="ID_1428347542" CREATED="1506967338741" MODIFIED="1506967339582"/>
 </node>
 <node TEXT="typedef long int *pint32;&#xa;&#xa;pint32 x,y,z" ID="ID_119429949" CREATED="1506967377692" MODIFIED="1506967385749"/>
-</node>
-</node>
-<node TEXT="Files and Streams" POSITION="right" ID="ID_1322697290" CREATED="1506962229251" MODIFIED="1506962236220"/>
-<node TEXT="Exceptions" FOLDED="true" POSITION="right" ID="ID_1111249213" CREATED="1506962237083" MODIFIED="1506962242259">
-<node TEXT="Exceptions provide a way to transfer control from one part of a program to another" ID="ID_389738718" CREATED="1510981976591" MODIFIED="1510981978407"/>
-<node TEXT="3 keywords :" ID="ID_1532772654" CREATED="1510981997239" MODIFIED="1510982005000">
-<node TEXT="try" ID="ID_481086318" CREATED="1510982026288" MODIFIED="1510982028784">
-<node ID="ID_1047993520" CREATED="1510982050406" MODIFIED="1510982050406"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    A <b>try</b> block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks.
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node TEXT="catch" ID="ID_939216777" CREATED="1510982029007" MODIFIED="1510982030752">
-<node ID="ID_1259241104" CREATED="1510982046422" MODIFIED="1510982046422"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The <b>catch</b> keyword indicates the catching of an exception.
-  </body>
-</html>
-
-</richcontent>
-<node TEXT="catch(...){}" ID="ID_511714975" CREATED="1510986350909" MODIFIED="1510986400998">
-<node TEXT="can catch all exceptions" ID="ID_1829844406" CREATED="1510986357365" MODIFIED="1510986367094"/>
-</node>
-<node TEXT="catch(ExceptionType e){}" ID="ID_1383420078" CREATED="1510986369373" MODIFIED="1510986384046">
-<node TEXT="can catch exception of type ExeptionType" ID="ID_14017287" CREATED="1510986385382" MODIFIED="1510986396910"/>
-</node>
-</node>
-</node>
-<node TEXT="throw" ID="ID_1327957614" CREATED="1510982031152" MODIFIED="1510982033064">
-<node ID="ID_1676377353" CREATED="1510982039519" MODIFIED="1510982039519"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    A program throws an exception when a problem shows up. This is done using a <b>throw</b> keyword.
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-</node>
-<node TEXT="Example" ID="ID_816652742" CREATED="1510986461214" MODIFIED="1510986463159">
-<node ID="ID_411349511" CREATED="1510986469078" MODIFIED="1510986519066"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      double division(int a, int b) {
-    </p>
-    <p>
-      &#160;&#160;&#160;if( b == 0 ) {
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#0000c0"><b>throw</b></font>&#160;&quot;Division by zero condition!&quot;;
-    </p>
-    <p>
-      &#160;&#160;&#160;}
-    </p>
-    <p>
-      &#160;&#160;&#160;return (a/b);
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      int main () {
-    </p>
-    <p>
-      &#160;&#160;&#160;int x = 50;
-    </p>
-    <p>
-      &#160;&#160;&#160;int y = 0;
-    </p>
-    <p>
-      &#160;&#160;&#160;double z = 0;
-    </p>
-    <p>
-      &#160;
-    </p>
-    <p>
-      &#160;&#160;&#160;<font color="#0000c0">try { </font>
-    </p>
-    <p>
-      <font color="#0000c0">&#160;&#160;&#160;&#160;&#160;&#160;z = division(x, y); </font>
-    </p>
-    <p>
-      <font color="#0000c0">&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; z &lt;&lt; endl; </font>
-    </p>
-    <p>
-      <font color="#0000c0">&#160;&#160;&#160;}</font>&#160;<font color="#ff0000">catch (</font><font color="#0000c0"><b>const char*</b></font><b><font color="#ff0000">&#160;msg</font></b><font color="#ff0000">) { </font>
-    </p>
-    <p>
-      <font color="#ff0000">&#160;&#160;&#160;&#160;&#160;cerr &lt;&lt; msg &lt;&lt; endl; </font>
-    </p>
-    <p>
-      <font color="#ff0000">&#160;&#160;&#160;}</font>
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &#160;&#160;&#160;return 0;
-    </p>
-    <p>
-      }
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<font NAME="Courier New" BOLD="false"/>
-</node>
-</node>
-<node TEXT="std::exception" FOLDED="true" ID="ID_1091251031" CREATED="1510993025999" MODIFIED="1510993037192">
-<node ID="ID_198400556" CREATED="1510993038320" MODIFIED="1510993038320"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::exception</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_1889101357" CREATED="1510993038325" MODIFIED="1510993038325"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            An exception and parent class of all the standard C++ exceptions.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_1741149304" CREATED="1510993038334" MODIFIED="1510993038334"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::bad_alloc</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_375594920" CREATED="1510993038337" MODIFIED="1510993038337"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This can be thrown by <b>new</b>.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_928035125" CREATED="1510993038344" MODIFIED="1510993038344"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::bad_cast</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_1490537520" CREATED="1510993038347" MODIFIED="1510993038347"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This can be thrown by <b>dynamic_cast</b>.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_792526948" CREATED="1510993038352" MODIFIED="1510993038352"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::bad_exception</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_1228699752" CREATED="1510993038354" MODIFIED="1510993038354"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is useful device to handle unexpected exceptions in a C++ program.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_1124102629" CREATED="1510993038359" MODIFIED="1510993038359"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::bad_typeid</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_1292373487" CREATED="1510993038361" MODIFIED="1510993038361"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This can be thrown by <b>typeid</b>.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_697427978" CREATED="1510993038367" MODIFIED="1510993038367"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::logic_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_327395058" CREATED="1510993038370" MODIFIED="1510993038370"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            An exception that theoretically can be detected by reading the code.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_1423251570" CREATED="1510993038377" MODIFIED="1510993038377"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::domain_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_1210518561" CREATED="1510993038380" MODIFIED="1510993038380"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is an exception thrown when a mathematically invalid domain is used.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_814099920" CREATED="1510993038386" MODIFIED="1510993038386"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::invalid_argument</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_517752932" CREATED="1510993038389" MODIFIED="1510993038389"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is thrown due to invalid arguments.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_23433782" CREATED="1510993038396" MODIFIED="1510993038396"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::length_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_407227500" CREATED="1510993038399" MODIFIED="1510993038399"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is thrown when a too big std::string is created.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_1517723221" CREATED="1510993038404" MODIFIED="1510993038404"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::out_of_range</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_282856120" CREATED="1510993038406" MODIFIED="1510993038406"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This can be thrown by the 'at' method, for example a std::vector and std::bitset&lt;&gt;::operator[]().
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_1207502470" CREATED="1510993038413" MODIFIED="1510993038413"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::runtime_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_358645195" CREATED="1510993038415" MODIFIED="1510993038415"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            An exception that theoretically cannot be detected by reading the code.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_866013088" CREATED="1510993038421" MODIFIED="1510993038421"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::overflow_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_145651532" CREATED="1510993038424" MODIFIED="1510993038424"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is thrown if a mathematical overflow occurs.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_956397693" CREATED="1510993038429" MODIFIED="1510993038429"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::range_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_1348740710" CREATED="1510993038432" MODIFIED="1510993038432"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is occurred when you try to store a value which is out of range.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node ID="ID_383180377" CREATED="1510993038437" MODIFIED="1510993038437"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            <b>std::underflow_error</b>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-<node ID="ID_593831759" CREATED="1510993038440" MODIFIED="1510993038440"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <table class="table table-bordered">
-      <tr>
-        <td>
-          <p>
-            This is thrown if a mathematical underflow occurs.
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-</node>
-<node TEXT="Define New Exceptions" ID="ID_1945837385" CREATED="1510993157857" MODIFIED="1510993166450">
-<node ID="ID_1042108157" CREATED="1510993275203" MODIFIED="1510993300133"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      by inheriting and overriding exception class (<b>std::exception</b>) functionality
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node ID="ID_1245184555" CREATED="1510993311908" MODIFIED="1510993418887"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      #include &lt;iostream&gt;
-    </p>
-    <p>
-      #include <b>&lt;exception&gt;</b>
-    </p>
-    <p>
-      using namespace std;
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      <font color="#0000c0"><b>struct MyException : public exception</b></font>&#160;{
-    </p>
-    <p>
-      &#160;&#160;&#160;const char * what () const throw () {
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;return &quot;C++ Exception&quot;;
-    </p>
-    <p>
-      &#160;&#160;&#160;}
-    </p>
-    <p>
-      };
-    </p>
-    <p>
-      &#160;
-    </p>
-    <p>
-      int main() {
-    </p>
-    <p>
-      &#160;&#160;&#160;try {
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;<b>throw MyException();</b>
-    </p>
-    <p>
-      &#160;&#160;&#160;} catch(<b><font color="#0000c0">MyException&amp;</font>&#160;e</b>) {
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;std::cout &lt;&lt; &quot;MyException caught&quot; &lt;&lt; std::endl;
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;std::cout &lt;&lt; e.what() &lt;&lt; std::endl;
-    </p>
-    <p>
-      &#160;&#160;&#160;} catch(std::exception&amp; e) {
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;//Other errors
-    </p>
-    <p>
-      &#160;&#160;&#160;}
-    </p>
-    <p>
-      }
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<font NAME="Courier New" BOLD="false"/>
-</node>
 </node>
 </node>
 </node>
