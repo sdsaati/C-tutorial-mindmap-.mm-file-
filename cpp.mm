@@ -415,7 +415,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="&#x62d;&#x648;&#x632;&#x647; &#x6cc; &#x62f;&#x6cc;&#x62f; &#x627;&#x639;&#x636;&#x627;" FOLDED="true" ID="ID_1017850138" CREATED="1506993463793" MODIFIED="1506993470314">
+<node TEXT="&#x62d;&#x648;&#x632;&#x647; &#x6cc; &#x62f;&#x6cc;&#x62f; &#x627;&#x639;&#x636;&#x627;" ID="ID_1017850138" CREATED="1506993463793" MODIFIED="1506993470314">
 <node TEXT="&#x628;&#x647; &#x637;&#x648;&#x631; &#x67e;&#x6cc;&#x634;&#x641;&#x631;&#x636; private" ID="ID_144344336" CREATED="1506993471145" MODIFIED="1506993481362"/>
 <node TEXT="public" ID="ID_1535944057" CREATED="1506993482441" MODIFIED="1506993484594"/>
 <node TEXT="protected" ID="ID_161910920" CREATED="1506993484897" MODIFIED="1506993487546">
@@ -425,7 +425,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 <node TEXT="&#x633;&#x627;&#x632;&#x646;&#x62f;&#x647; &#x648; &#x645;&#x62e;&#x631;&#x628;" ID="ID_207165271" CREATED="1506997898099" MODIFIED="1506997902787">
-<node TEXT="&#x633;&#x627;&#x632;&#x646;&#x62f;&#x647;" FOLDED="true" ID="ID_796873977" CREATED="1506997942786" MODIFIED="1506997945859">
+<node TEXT="&#x633;&#x627;&#x632;&#x646;&#x62f;&#x647;" ID="ID_796873977" CREATED="1506997942786" MODIFIED="1506997945859">
 <node TEXT="class Line {&#xa;   public:&#xa;      void setLength( double len );&#xa;      double getLength( void );&#xa;      Line();  // This is the constructor&#xa;   private:&#xa;      double length;&#xa;};&#xa; &#xa;// Member functions definitions including constructor&#xa;Line::Line(void) {&#xa;   cout &lt;&lt; &quot;Object is being created&quot; &lt;&lt; endl;&#xa;}&#xa;&#xa;// Main function for the program&#xa;int main() {&#xa;   Line line;&#xa;}" ID="ID_1225993705" CREATED="1506997946699" MODIFIED="1506998397674">
 <font NAME="Courier New" BOLD="false"/>
 </node>
@@ -531,7 +531,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="&#x645;&#x62e;&#x631;&#x628;" FOLDED="true" ID="ID_907979228" CREATED="1506998508642" MODIFIED="1506998510890">
+<node TEXT="&#x645;&#x62e;&#x631;&#x628;" ID="ID_907979228" CREATED="1506998508642" MODIFIED="1506998510890">
 <node TEXT="~" ID="ID_694501486" CREATED="1506998568681" MODIFIED="1506998576011"/>
 <node TEXT="&#x648;&#x642;&#x62a;&#x6cc; &#x62d;&#x648;&#x632;&#x647; &#x6cc; &#x62a;&#x639;&#x631;&#x6cc;&#x641;&#x634; {} &#x62a;&#x645;&#x648;&#x645; &#x645;&#x6cc;&#x634;&#x647; &#x641;&#x631;&#x627;&#x62e;&#x648;&#x627;&#x646;&#x6cc; &#x645;&#x6cc;&#x634;&#x647;" ID="ID_1682463699" CREATED="1507593536216" MODIFIED="1507593558713"/>
 <node ID="ID_62635063" CREATED="1506998576778" MODIFIED="1506998733249"><richcontent TYPE="NODE">
@@ -3228,9 +3228,362 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Templates" POSITION="left" ID="ID_474405566" CREATED="1506962251138" MODIFIED="1506962254507"/>
+<node TEXT="Templates" FOLDED="true" POSITION="left" ID="ID_474405566" CREATED="1506962251138" MODIFIED="1506962254507">
+<node TEXT="Function Template" ID="ID_1159107857" CREATED="1510980118390" MODIFIED="1510980119549">
+<node TEXT="Syntax" ID="ID_931726817" CREATED="1510980131028" MODIFIED="1510980133205">
+<node TEXT="template &lt;class type&gt; ret-type func-name(parameter list) {&#xa;   // body of function&#xa;}" ID="ID_1323990749" CREATED="1510980138053" MODIFIED="1510980141224">
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="Example" ID="ID_1071660746" CREATED="1510980149468" MODIFIED="1510980383647" VGAP_QUANTITY="30.0 px">
+<node ID="ID_586829658" CREATED="1510980159668" MODIFIED="1510980383646"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      #include &lt;string&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      using namespace std;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#ff0000">template</font><font color="#000000">&#160;</font><font color="#ff0000">&lt;typename T&gt;</font>
+    </p>
+    <p>
+      <font color="#000000">inline <b>T</b>&#160;const&amp; Max (<b>T</b>&#160;const&amp; a, <b>T</b>&#160; const&amp; b) { </font>
+    </p>
+    <p>
+      <font color="#000000">&#160;&#160;&#160;return a &lt; b ? b:a; </font>
+    </p>
+    <p>
+      <font color="#000000">}</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main () {
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#000000"><b>int</b></font>&#160;i = 39;
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">int</font></b>&#160;j = 20;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Max(i, j): &quot; &lt;&lt; <font color="#000000">Max(i, j)</font>&#160;&lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">double</font></b>&#160;f1 = 13.5;
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">double</font></b>&#160;f2 = 20.7;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Max(f1, f2): &quot; &lt;&lt; <font color="#000000">Max(f1, f2)</font>&#160;&lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">string</font></b>&#160;s1 = &quot;Hello&quot;;
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">string</font></b>&#160;s2 = &quot;World&quot;;
+    </p>
+    <p>
+      &#160;&#160;&#160;cout &lt;&lt; &quot;Max(s1, s2): &quot; &lt;&lt; <font color="#000000">Max(s1, s2)</font>&#160;&lt;&lt; endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+<node TEXT="Class Template" ID="ID_1948012189" CREATED="1510980119924" MODIFIED="1510980126869">
+<node TEXT="Syntax" ID="ID_583359656" CREATED="1510980411405" MODIFIED="1510980415341">
+<node TEXT="template &lt;class type&gt; class class-name {&#xa;   .&#xa;   .&#xa;   .&#xa;}" ID="ID_27969736" CREATED="1510980420717" MODIFIED="1510980424153">
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="Example" ID="ID_1055073951" CREATED="1510980470836" MODIFIED="1510980473413">
+<node ID="ID_1135342154" CREATED="1510980474093" MODIFIED="1510980620248"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      #include &lt;vector&gt;
+    </p>
+    <p>
+      #include &lt;cstdlib&gt;
+    </p>
+    <p>
+      #include &lt;string&gt;
+    </p>
+    <p>
+      #include &lt;stdexcept&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      using namespace std;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#ff0000"><b>template &lt;class T&gt;</b></font>
+    </p>
+    <p>
+      class Stack {
+    </p>
+    <p>
+      &#160;&#160;&#160;private:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;vector<font color="#ff0000">&lt;T&gt;</font>&#160;elems;&#160;&#160;&#160;&#160;// elements
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void push(<font color="#ff0000">T</font>&#160;const&amp;);&#160;&#160;// push element
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;void pop();&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// pop element
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;<font color="#ff0000">T</font>&#160;top() const;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// return top element
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;bool empty() const {&#160;&#160;&#160;&#160;&#160;&#160;// return true if empty.
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return elems.empty();
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#ff0000"><b>template &lt;class T&gt;</b></font>
+    </p>
+    <p>
+      void Stack<font color="#ff0000">&lt;T&gt;</font>::push (<font color="#ff0000">T</font>&#160;const&amp; elem) {
+    </p>
+    <p>
+      &#160;&#160;&#160;// append copy of passed element
+    </p>
+    <p>
+      &#160;&#160;&#160;elems.push_back(elem);&#160;&#160;&#160;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#ff0000"><b>template &lt;class T&gt;</b></font>
+    </p>
+    <p>
+      void Stack<font color="#ff0000">&lt;T&gt;</font>::pop () {
+    </p>
+    <p>
+      &#160;&#160;&#160;if (elems.empty()) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;throw out_of_range(&quot;Stack<font color="#ff0000">&lt;&gt;</font>::pop(): empty stack&quot;);
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;// remove last element
+    </p>
+    <p>
+      &#160;&#160;&#160;elems.pop_back();&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#ff0000"><b>template &lt;class T&gt;</b></font>
+    </p>
+    <p>
+      T Stack<font color="#ff0000">&lt;T&gt;</font>::top () const {
+    </p>
+    <p>
+      &#160;&#160;&#160;if (elems.empty()) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;throw out_of_range(&quot;Stack<font color="#ff0000">&lt;&gt;</font>::top(): empty stack&quot;);
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;// return copy of last element
+    </p>
+    <p>
+      &#160;&#160;&#160;return elems.back();&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main() {
+    </p>
+    <p>
+      &#160;&#160;&#160;try {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;Stack<font color="#ff0000">&lt;int&gt;&#160;</font>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;intStack;&#160;&#160;// stack of ints
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;Stack<font color="#ff0000">&lt;string&gt;</font>&#160; stringStack;&#160;&#160;&#160;&#160;// stack of strings
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;// manipulate int stack
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;intStack.push(7);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; intStack.top() &lt;&lt;endl;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;// manipulate string stack
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;stringStack.push(&quot;hello&quot;);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; stringStack.top() &lt;&lt; std::endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;stringStack.pop();
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;stringStack.pop();
+    </p>
+    <p>
+      &#160;&#160;&#160;} catch (exception const&amp; ex) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;cerr &lt;&lt; &quot;Exception: &quot; &lt;&lt; ex.what() &lt;&lt;endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;return -1;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+<node TEXT="Non-Type parameters" ID="ID_370525838" CREATED="1510981448236" MODIFIED="1510981461128">
+<node TEXT="Example" ID="ID_1390895427" CREATED="1510981461956" MODIFIED="1510981470829">
+<node TEXT="template&lt;class T, int N&gt;&#xa;class myBox&#xa;{&#xa;    public:&#xa;    T store[N];&#xa;};&#xa;&#xa;myBox&lt;int, 5&gt; box" ID="ID_905443659" CREATED="1510981471951" MODIFIED="1510981528512">
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="with default values" ID="ID_1625563206" CREATED="1510981587268" MODIFIED="1510981594925">
+<node TEXT="&#x62f;&#x631; &#x632;&#x645;&#x627;&#x646; &#x627;&#x633;&#x62a;&#x641;&#x627;&#x62f;&#x647; &#x628;&#x627;&#x6cc;&#x62f; &#x62d;&#x62a;&#x645;&#x627; &lt;&gt; &#x631;&#x627; &#x62e;&#x627;&#x644;&#x6cc; &#x627;&#x633;&#x62a;&#x641;&#x627;&#x62f;&#x647; &#x6a9;&#x631;&#x62f;" ID="ID_397884288" CREATED="1510981597980" MODIFIED="1510981613973">
+<node ID="ID_382672799" CREATED="1510981530036" MODIFIED="1510981644551"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      template<font color="#0000c0">&lt;class T = int, int N = 5&gt;</font>
+    </p>
+    <p>
+      <b>myBox&lt;&gt; box;</b>&#160;<font color="#008000">// must use empty &lt;&gt;</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="Preprocessor" POSITION="left" ID="ID_280139109" CREATED="1506962259458" MODIFIED="1506962264555"/>
-<node TEXT="Signal Handling" POSITION="left" ID="ID_1618981300" CREATED="1506962265547" MODIFIED="1506962274428"/>
 <node TEXT="Multithreading" POSITION="left" ID="ID_755380825" CREATED="1506962276979" MODIFIED="1506962281507"/>
 <node TEXT="Web Programming" POSITION="left" ID="ID_316005598" CREATED="1506962286931" MODIFIED="1506962290635"/>
 <node TEXT="References" FOLDED="true" POSITION="right" ID="ID_688505160" CREATED="1506962144780" MODIFIED="1506962146348">
