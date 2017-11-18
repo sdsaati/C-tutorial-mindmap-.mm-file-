@@ -351,7 +351,7 @@ for ( int i = 0; i &lt; 5; i++ ) {
 <node TEXT="strcpy(s1, s2);&#xa;Copies string s2 into string s1.&#xa;&#xa;&#xa;strcat(s1, s2);&#xa;Concatenates string s2 onto the end of string s1.&#xa;&#xa;&#xa;strlen(s1);&#xa;Returns the length of string s1.&#xa;&#xa;&#xa;strcmp(s1, s2);&#xa;Returns 0 if s1 and s2 are the same; less than 0 if s1&lt;s2; greater than 0 if s1&gt;s2.&#xa;&#xa;&#xa;strchr(s1, ch);&#xa;Returns a pointer to the first occurrence of character ch in string s1.&#xa;&#xa;strstr(s1, s2);&#xa;Returns a pointer to the first occurrence of string s2 in string s1." ID="ID_484388925" CREATED="1506961900028" MODIFIED="1506961924487"/>
 </node>
 </node>
-<node TEXT="&#x67e;&#x648;&#x6cc;&#x646;&#x62a;&#x631;" FOLDED="true" POSITION="right" ID="ID_1406197762" CREATED="1506962107283" MODIFIED="1506962111268" VGAP_QUANTITY="0.6 px">
+<node TEXT="&#x67e;&#x648;&#x6cc;&#x646;&#x62a;&#x631;" POSITION="right" ID="ID_1406197762" CREATED="1506962107283" MODIFIED="1506962111268" VGAP_QUANTITY="0.6 px">
 <node TEXT="type *var-name;" ID="ID_691853111" CREATED="1506962855585" MODIFIED="1506962857209"/>
 <node TEXT="* &#x6cc;&#x639;&#x646;&#x6cc; &#x645;&#x6a9;&#x627;&#x646;&#x634; &#x648;&#xa;&amp; &#x6cc;&#x639;&#x646;&#x6cc; &#x622;&#x62f;&#x631;&#x633;&#x634;" ID="ID_1730645646" CREATED="1506964328198" MODIFIED="1506964342948"/>
 <node TEXT="int    *ip;    // pointer to an integer&#xa;double *dp;    // pointer to a double&#xa;float  *fp;    // pointer to a float&#xa;char   *ch     // pointer to character" ID="ID_559383125" CREATED="1506962863464" MODIFIED="1506962864129"/>
@@ -395,7 +395,198 @@ for ( int i = 0; i &lt; 5; i++ ) {
 </node>
 </node>
 </node>
-<node TEXT="Dynamic Memory" POSITION="left" ID="ID_210870616" CREATED="1506962242722" MODIFIED="1506962245907"/>
+<node TEXT="Dynamic Memory" FOLDED="true" POSITION="left" ID="ID_210870616" CREATED="1506962242722" MODIFIED="1506962245907">
+<node TEXT="RAM has 2 sections" ID="ID_563249530" CREATED="1510994629200" MODIFIED="1510994638113">
+<node ID="ID_159527518" CREATED="1510994648400" MODIFIED="1510994662342"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul class="list">
+      <li>
+        <p>
+          <b>The stack</b>&#160;&#8722; All variables declared inside the function will take up memory from the stack.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1867751161" CREATED="1510994648402" MODIFIED="1510994659461"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul class="list">
+      <li>
+        <p>
+          <b>The heap</b>&#160;&#8722; This is unused memory of the program and can be used to allocate the memory dynamically when program runs.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Allocate and Free up" ID="ID_1542669429" CREATED="1510995072463" MODIFIED="1510995085825">
+<node TEXT="new" ID="ID_1148961471" CREATED="1510994745762" MODIFIED="1510994749747">
+<node TEXT="Syntax" ID="ID_1858190914" CREATED="1510994775234" MODIFIED="1510994777459">
+<node ID="ID_894007195" CREATED="1510994778122" MODIFIED="1510994782868"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>new</b>&#160;data-type;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_130316213" CREATED="1510994830211" MODIFIED="1510994925518"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="text-align: left">
+      double* <b>pvalue</b>&#160;&#160;= NULL; <font color="#008000">// Pointer initialized with null </font>
+    </p>
+    <p style="text-align: left">
+      <b>pvalue</b>&#160;&#160;= <font color="#0000c0">new double</font>;&#160;&#160;&#160;<font color="#008000">// Request memory for the variable</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="delete" ID="ID_489569690" CREATED="1510994750105" MODIFIED="1510994751882">
+<node TEXT="Syntax" ID="ID_396611402" CREATED="1510995027983" MODIFIED="1510995030583">
+<node ID="ID_1680883314" CREATED="1510995031278" MODIFIED="1510995038143"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>delete</b>&#160;pvalue;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#008000">// Release memory pointed to by pvalue</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="For Arrays" ID="ID_1542279553" CREATED="1510995123815" MODIFIED="1510995129840">
+<node ID="ID_1643118816" CREATED="1510995132663" MODIFIED="1510995186827"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      double** pvalue&#160;&#160;= NULL;&#160;&#160;&#160;&#160;&#160; <font color="#008000">// Pointer initialized with null </font>
+    </p>
+    <p>
+      pvalue&#160;&#160;= <font color="#0000c0"><b>new</b></font>&#160;double [3][4];&#160; <font color="#008000">// Allocate memory for a 3x4 array </font>
+    </p>
+    <p>
+      <font color="#0000c0"><b>delete []</b></font><b>&#160;</b>pvalue;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#008000">&#160; // Delete array pointed to by pvalue</font>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+<node ID="ID_171953653" CREATED="1510995350401" MODIFIED="1510995396981"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      using namespace std;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      class <font color="#ff0000">Box</font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;public:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;Box() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Constructor called!&quot; &lt;&lt;endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;~Box() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Destructor called!&quot; &lt;&lt;endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      };
+    </p>
+    <p>
+      int main() {
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#ff0000">Box*</font>&#160;myBoxArray = <b><font color="#0000c0">new</font></b>&#160;<font color="#ff0000">Box[4]</font>;
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#0000c0">delete []</font></b>&#160;myBoxArray; // Delete array
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
 <node TEXT="Class &amp; Objects" FOLDED="true" POSITION="left" ID="ID_1266577794" CREATED="1506962172827" MODIFIED="1506962181716">
 <node TEXT="class Box {&#xa;   public:&#xa;      double length;   // Length of a box&#xa;      double breadth;  // Breadth of a box&#xa;      double height;   // Height of a box&#xa;};" FOLDED="true" ID="ID_1089271205" CREATED="1506968000078" MODIFIED="1506998406141">
 <font NAME="Courier New" BOLD="false"/>
