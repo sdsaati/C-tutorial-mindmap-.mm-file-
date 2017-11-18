@@ -2913,12 +2913,321 @@ for ( int i = 0; i &lt; 5; i++ ) {
 <font NAME="Courier New" BOLD="false"/>
 </node>
 </node>
+<node TEXT="interface =" ID="ID_1650011060" CREATED="1510973520616" MODIFIED="1510973587337">
+<font NAME="Courier New" BOLD="false"/>
 </node>
 </node>
-<node TEXT="Abstraction" POSITION="left" ID="ID_354895035" CREATED="1506962203291" MODIFIED="1506962206828"/>
-<node TEXT="Encapsulation" POSITION="left" ID="ID_601664393" CREATED="1506962207347" MODIFIED="1506962210132"/>
-<node TEXT="Interfaces" POSITION="left" ID="ID_832943831" CREATED="1506962210443" MODIFIED="1506962213444"/>
-<node TEXT="Namespaces" POSITION="left" ID="ID_1791939323" CREATED="1506962246363" MODIFIED="1506962250451"/>
+</node>
+<node TEXT="Namespaces" FOLDED="true" POSITION="left" ID="ID_1791939323" CREATED="1506962246363" MODIFIED="1506962250451">
+<node TEXT="&#x648;&#x642;&#x62a;&#x6cc; &#x686;&#x646;&#x62f; &#x627;&#x633;&#x645; &#x6cc;&#x6a9;&#x633;&#x627;&#x646; &#x62f;&#x627;&#x634;&#x62a;&#x647; &#x628;&#x627;&#x634;&#x6cc;&#x645; &#x628;&#x631;&#x627;&#x6cc; &#x62a;&#x645;&#x627;&#x6cc;&#x632; &#x628;&#x647; &#x627;&#x637;&#x644;&#x627;&#x639;&#x627;&#x62a; &#x627;&#x636;&#x627;&#x641;&#x6cc; &#x62a;&#x631;&#x6cc; &#x646;&#x6cc;&#x627;&#x632; &#x62f;&#x627;&#x631;&#x6cc;&#x645;" ID="ID_1070138448" CREATED="1510973823913" MODIFIED="1510973842993">
+<node ID="ID_1461759862" CREATED="1510973843673" MODIFIED="1510973853134"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>namespace</b>&#160;namespace_name {
+    </p>
+    <p>
+      &#160;&#160;&#160;// code declarations
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+<node ID="ID_578613922" CREATED="1510973869329" MODIFIED="1510973878895"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      name<b>::</b>code;&#160;&#160;// code could be variable or function.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+<node ID="ID_1639983630" CREATED="1510973924362" MODIFIED="1510973954373"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      // first name space
+    </p>
+    <p>
+      <b>namespace</b>&#160;<font color="#ff0000">first_space</font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;void func() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Inside first_space&quot; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // second name space
+    </p>
+    <p>
+      <b>namespace</b>&#160;<font color="#ff0000">second_space</font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;void func() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Inside second_space&quot; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main () {
+    </p>
+    <p>
+      &#160;&#160;&#160;// Calls function from first name space.
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#ff0000">first_space</font>::<font color="#000000">func</font>();
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;// Calls function from second name space.
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#ff0000">second_space</font>::<font color="#000000">func</font>();
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+<node TEXT="Using" ID="ID_118025571" CREATED="1510978284903" MODIFIED="1510978293833">
+<node TEXT="&#x628;&#x631;&#x627;&#x6cc; &#x62c;&#x644;&#x648;&#x6af;&#x6cc;&#x631;&#x6cc; &#x627;&#x632; &#x646;&#x648;&#x634;&#x62a;&#x646; &#x6a9;&#x644;&#x645;&#x647; &#x6cc; namespace:: &#x645;&#x6cc; &#x62a;&#x648;&#x627;&#x646; &#x627;&#x632; using &#x627;&#x633;&#x62a;&#x641;&#x627;&#x62f;&#x647; &#x6a9;&#x631;&#x62f;" ID="ID_254256805" CREATED="1510978350863" MODIFIED="1510978368588"/>
+<node ID="ID_1628669425" CREATED="1510978294552" MODIFIED="1510978326538"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      <font color="#0000c0">using namespace std;</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // first name space
+    </p>
+    <p>
+      <b><font color="#0000c0">namespace first_space</font></b><font color="#0000c0">&#160;{ </font>
+    </p>
+    <p>
+      <font color="#0000c0">&#160;&#160;&#160;void func() { </font>
+    </p>
+    <p>
+      <font color="#0000c0">&#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Inside first_space&quot; &lt;&lt; endl; </font>
+    </p>
+    <p>
+      <font color="#0000c0">&#160;&#160;&#160;} </font>
+    </p>
+    <p>
+      <font color="#0000c0">}</font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // second name space
+    </p>
+    <p>
+      namespace second_space {
+    </p>
+    <p>
+      &#160;&#160;&#160;void func() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;cout &lt;&lt; &quot;Inside second_space&quot; &lt;&lt; endl;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#ff0000"><b>using namespace first_space;</b></font>
+    </p>
+    <p>
+      int main () {
+    </p>
+    <p>
+      &#160;&#160;&#160;// This calls function from first name space.
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">func();</font></b>
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+<node ID="ID_824395752" CREATED="1510978388320" MODIFIED="1510978399795"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #include &lt;iostream&gt;
+    </p>
+    <p>
+      <b><font color="#ff0000">using std::cout;</font></b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      int main () {
+    </p>
+    <p>
+      &#160;&#160;&#160;<b><font color="#000000">cout</font></b>&#160;&lt;&lt; &quot;std::endl is used with std!&quot; &lt;&lt; std::endl;
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;return 0;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+<node TEXT="Nested Namespaces" ID="ID_990454177" CREATED="1510978804466" MODIFIED="1510978813541">
+<node ID="ID_645069077" CREATED="1510978821827" MODIFIED="1510978867414"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#ff0000"><b>namespace</b></font>&#160;<font color="#0000c0">namespace_name1</font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// code declarations</font>
+    </p>
+    <p>
+      <font color="#ff0000"><b>namespace</b></font>&#160;<font color="#0000c0">namespace_name2</font>&#160;{
+    </p>
+    <p>
+      &#160;&#160;&#160;<font color="#008000">// code declarations</font>
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+<node ID="ID_407150943" CREATED="1510978827947" MODIFIED="1510978893722"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#008000">// to access members of namespace_name2</font>
+    </p>
+    <p>
+      <b>using namespace</b>&#160;<font color="#ff0000">namespace_name1</font>::<font color="#ff0000">namespace_name2</font>;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font color="#008000">// to access members of namespace:name1</font>
+    </p>
+    <p>
+      <b>using namespace</b>&#160;<font color="#ff0000">namespace_name1</font>;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font NAME="Courier New" BOLD="false"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="Templates" POSITION="left" ID="ID_474405566" CREATED="1506962251138" MODIFIED="1506962254507"/>
 <node TEXT="Preprocessor" POSITION="left" ID="ID_280139109" CREATED="1506962259458" MODIFIED="1506962264555"/>
 <node TEXT="Signal Handling" POSITION="left" ID="ID_1618981300" CREATED="1506962265547" MODIFIED="1506962274428"/>
